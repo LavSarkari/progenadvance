@@ -134,12 +134,8 @@ Point `@` to GitHub Pages IP addresses:
 
 ## 📋 Post-Launch Configuration Checklist
 
-- [ ] **Formspree / External Form Handler:**
-  - Create a free form at [formspree.io](https://formspree.io).
-  - Open `contact.html` and locate line 192:  
-    `action="https://formspree.io/f/YOUR_FORM_ID"`
-  - Replace `YOUR_FORM_ID` with your actual Formspree ID (e.g., `f/xpznvqwe`).
-  - *Note:* Until configured, the form client script honestly notifies the user and provides an automatic prefilled `mailto:` fallback directly to `contact@progenadvance.com` and `progenadvance@gmail.com`.
+- [x] **Formspree / External Form Handler:**
+  - Configured with endpoint `https://formspree.io/f/mjyybvwy` in `contact.html` with anti-bot honeypot protection.
 - [ ] **Domain DNS Verification:**
   - Verify `progenadvance.com` resolves to GitHub Pages IPs.
   - Enable **Enforce HTTPS** in GitHub Pages Settings.

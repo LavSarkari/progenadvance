@@ -178,7 +178,9 @@
             <div id="form-status-banner" class="form-status-banner" role="status" aria-live="polite"></div>
 
             <!-- Consultation Form -->
-            <form id="consultation-form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST" novalidate>
+            <form id="consultation-form" action="https://formspree.io/f/mjyybvwy" method="POST" novalidate>
+              <!-- Anti-bot honeypot field for Formspree spam protection -->
+              <input type="text" name="_gotcha" style="display:none !important;" tabindex="-1" autocomplete="off" aria-hidden="true">
               <div class="form-group">
                 <label for="contact-name" class="form-label">Full Name <span class="required" aria-hidden="true">*</span></label>
                 <input type="text" id="contact-name" name="name" class="form-control" placeholder="Dr. Jane Doe / Prof. John Smith" required>
