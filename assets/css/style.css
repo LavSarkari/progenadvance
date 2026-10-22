@@ -853,6 +853,26 @@ li {
   border-bottom: 1px solid var(--color-border-base);
 }
 
+.services-quad-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.5rem;
+}
+
+@media (max-width: 1080px) {
+  .services-quad-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .services-quad-grid {
+    grid-template-columns: 1fr;
+    gap: 1.25rem;
+  }
+}
+
 .editorial-card {
   background: #ffffff;
   border: 1px solid var(--color-border-base);
@@ -1150,6 +1170,32 @@ li {
   border-bottom: 1px solid var(--color-border-base);
 }
 
+.framework-grid-5 {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 1.25rem;
+}
+
+@media (max-width: 1080px) {
+  .framework-grid-5 {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.25rem;
+  }
+  .framework-grid-5 > :last-child:nth-child(odd) {
+    grid-column: 1 / -1;
+  }
+}
+
+@media (max-width: 600px) {
+  .framework-grid-5 {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+  .framework-grid-5 > :last-child:nth-child(odd) {
+    grid-column: auto;
+  }
+}
+
 .stage-step-card {
   background: #ffffff;
   border: 1px solid var(--color-border-base);
@@ -1190,6 +1236,26 @@ li {
 .collaboration-section {
   background-color: var(--color-bg-base);
   border-bottom: 1px solid var(--color-border-base);
+}
+
+.collab-sectors-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+}
+
+@media (max-width: 900px) {
+  .collab-sectors-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.25rem;
+  }
+}
+
+@media (max-width: 580px) {
+  .collab-sectors-grid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
 }
 
 .collab-sector-card {
@@ -1567,11 +1633,17 @@ li {
 }
 .step-tools-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-template-columns: repeat(3, 1fr);
   gap: 1rem;
   margin-top: 1.25rem;
   padding-top: 1.25rem;
   border-top: 1px solid var(--color-border-base);
+}
+
+@media (max-width: 768px) {
+  .step-tools-grid {
+    grid-template-columns: 1fr;
+  }
 }
 .tool-box {
   background: var(--color-bg-subtle);
@@ -1989,6 +2061,9 @@ li {
   @media (min-width: 500px) and (max-width: 768px) {
     .capabilities-grid-5 {
       grid-template-columns: repeat(2, 1fr);
+    }
+    .capabilities-grid-5 > :last-child:nth-child(odd) {
+      grid-column: 1 / -1;
     }
   }
 
